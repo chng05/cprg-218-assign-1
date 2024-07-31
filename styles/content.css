@@ -1,26 +1,73 @@
 .content-section {
-    background-color: #8b9e6c;
+    background-color: #d6cfc2;
     color: #3d230f;
-    font-family: Montserrat, Helvetica, Arial, sans-serif;
-    text-align: center;
-    padding-left: 100px;
-    padding-right: 100px;
+    font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+    padding: 30px;
 }
 
-h2 {
-    font-family: 'Beth Ellen';
-    src: url('fonts/BethEllen-Regular.tff') format('tff');
-    font-size: 35px;
-    text-align: center;
+.content-column{
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 10px;
+    text-align: justify;
+}
+.content-column h2 {
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.content-column h3{
+    color: #8b717b;
+    font-weight: 600;
+}
+
+.content-column p{
+    font-size: 15px;
 }
 
 .video-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-bottom: 30px;
+    max-width: 100%; 
+    margin: 20px auto; 
+    padding: 10px;
 }
 
 .video {
-    width: 958px;
-    height: 539px;}
+    width: 100%; 
+    height: auto;
+}
+
+/* Mobile Media Query */
+@media screen and (max-width: 425px) {
+    .content-column {
+        max-width: 100%;
+    }
+
+    .video-container {
+        max-width: 100%; 
+        margin: 15px auto;}
+
+    .video {
+        width: 100%;
+        height: auto; 
+    }
+}
+
+/* Desktop Media Query*/
+@media screen and (min-width: 768px) {
+    .content-column {
+        max-width: 60%;
+    }
+
+    .video-container {
+        max-width: 800px;
+        margin: 30px auto;
+    }
+
+    .video {
+        width: 100%;
+        height: auto;
+    }
+}

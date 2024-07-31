@@ -1,0 +1,94 @@
+.accordion-section {
+  background-color: #8b717b;
+  color: #3d230f;
+  font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  padding: 20px;
+}
+
+.accordion-section h2 {
+  font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+  text-align: center;
+}
+
+.accordion {
+  max-width: 800px;
+  margin: 0 auto;
+  color: #f4ebd7;
+  padding: 10px;
+}
+
+.accordion-item {
+  border: 3px solid #8b717b;
+  margin-bottom: 10px;
+}
+
+.accordion-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #3d230f;
+  padding: 15px 20px;
+  cursor: pointer;
+  transition: color 0.3s; 
+}
+
+.accordion-header:hover, .accordion-icon:hover {
+  color: #8b717b;
+}
+
+.accordion-header h3 {
+  margin: 0;
+}
+
+.accordion-icon {
+  color: #f4ebd7;
+  font-size: 20px;
+  font-weight: bold;
+  transition: color 0.3s; 
+}
+
+.accordion-content {
+  padding: 20px;
+  color: #3d230f;
+  background: #e6e1d944;
+  display: none;
+}
+
+.accordion-content.active {
+  display: block;
+}
+
+/*More FAQS*/
+.more-faqs-link{
+  color: inherit;
+  font-size: 15px;
+  text-align: center;
+}
+
+.more-faqs-link a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.more-faqs-link a:hover {
+  color: #f4ebd7;
+}
+
+.more-faqs-link a i {
+  margin-left: 5px;
+  font-size: 16px; 
+}
+
+/* Tablet to Desktop Media Query */
+@media screen and (min-width: 768px) {
+  .accordion {
+      padding: 15px; 
+  }
+
+  .accordion-item {
+      margin-bottom: 15px; 
+  }
+}
