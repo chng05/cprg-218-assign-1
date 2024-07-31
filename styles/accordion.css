@@ -1,14 +1,14 @@
 .accordion-section {
   background-color: #8b717b;
   color: #3d230f;
-  font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+  font-family: "Montserrat", Helvetica, Arial, sans-serif;
   font-weight: 400;
   font-size: 15px;
   padding: 20px;
 }
 
 .accordion-section h2 {
-  font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+  font-family: "Montserrat", Helvetica, Arial, sans-serif;
   text-align: center;
 }
 
@@ -31,10 +31,11 @@
   background-color: #3d230f;
   padding: 15px 20px;
   cursor: pointer;
-  transition: color 0.3s; 
+  transition: color 0.3s;
 }
 
-.accordion-header:hover, .accordion-icon:hover {
+.accordion-header:hover,
+.accordion-icon:hover {
   color: #8b717b;
 }
 
@@ -46,7 +47,7 @@
   color: #f4ebd7;
   font-size: 20px;
   font-weight: bold;
-  transition: color 0.3s; 
+  transition: color 0.3s;
 }
 
 .accordion-content {
@@ -61,34 +62,34 @@
 }
 
 /*More FAQS*/
-.more-faqs-link{
-  color: inherit;
+.more-faqs-link {
+  color: #42242e;
   font-size: 15px;
   text-align: center;
 }
 
 .more-faqs-link a {
-  color: inherit;
+  color: #2a1221;
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 .more-faqs-link a:hover {
-  color: #f4ebd7;
+  color: #bcd394;
 }
 
 .more-faqs-link a i {
   margin-left: 5px;
-  font-size: 16px; 
+  font-size: 16px;
 }
 
 /* Tablet to Desktop Media Query */
 @media screen and (min-width: 768px) {
   .accordion {
-      padding: 15px; 
+    padding: 15px;
   }
 
   .accordion-item {
-      margin-bottom: 15px; 
+    margin-bottom: 15px;
   }
 }
