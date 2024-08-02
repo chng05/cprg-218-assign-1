@@ -1,73 +1,74 @@
 .content-section {
-    background-color: #d6cfc2;
-    color: #3d230f;
-    font-family: 'Montserrat', Helvetica, Arial, sans-serif;
-    padding: 30px;
+  background-color: #d6cfc2;
+  color: #3d230f;
+  font-family: "Montserrat", Helvetica, Arial, sans-serif;
+  padding: 30px;
 }
 
-.content-column{
-    max-width: 400px;
-    margin: 0 auto;
-    padding: 10px;
-    text-align: justify;
+.content-column {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 10px;
+  text-align: justify;
 }
 .content-column h2 {
-    font-size: 30px;
-    font-weight: bolder;
+  font-size: 30px;
+  font-weight: bolder;
 }
 
-.content-column h3{
-    color: #8b717b;
-    font-weight: 600;
+.content-column h3 {
+  color: #42242e;
+  font-weight: 600;
 }
 
-.content-column p{
-    font-size: 15px;
+.content-column p {
+  font-size: 15px;
 }
 
 .video-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 100%; 
-    margin: 20px auto; 
-    padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  margin: 20px auto;
+  padding: 10px;
 }
 
 .video {
-    width: 100%; 
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 
 /* Mobile Media Query */
 @media screen and (max-width: 425px) {
-    .content-column {
-        max-width: 100%;
-    }
+  .content-column {
+    max-width: 100%;
+  }
 
-    .video-container {
-        max-width: 100%; 
-        margin: 15px auto;}
+  .video-container {
+    max-width: 100%;
+    margin: 15px auto;
+  }
 
-    .video {
-        width: 100%;
-        height: auto; 
-    }
+  .video {
+    width: 100%;
+    height: auto;
+  }
 }
 
 /* Desktop Media Query*/
 @media screen and (min-width: 768px) {
-    .content-column {
-        max-width: 60%;
-    }
+  .content-column {
+    max-width: 60%;
+  }
 
-    .video-container {
-        max-width: 800px;
-        margin: 30px auto;
-    }
+  .video-container {
+    max-width: 800px;
+    margin: 30px auto;
+  }
 
-    .video {
-        width: 100%;
-        height: auto;
-    }
+  .video {
+    width: 100%;
+    height: auto;
+  }
 }
