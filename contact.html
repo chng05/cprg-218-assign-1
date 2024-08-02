@@ -16,6 +16,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
     <!--Stylesheets-->
+    <!--Home Page-->
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/navigation.css">
     <link rel="stylesheet" href="styles/hero.css">
@@ -26,53 +27,53 @@
     
     <!--Other Pages-->
     <link rel="stylesheet" href="styles/contact.css">
+    <link rel="stylesheet" href="styles/all-products.css">
 
 </head>
 
 <body>
-        <!-- Navigation Bar -->
-        <div class="heading">
-            <div class="logo">
-                <a href="index.html"><img src="assets/mudmade-logo.png" alt="Mudemade in cursive writing" width="700" height="700"></a>
-            </div>
-            <nav class="nav">
-                <ul class="nav-list">
-                    <li class="nav-item"><a href="#Products">Products</a></li>
-                    <li class="nav-item"><a href="contact.html">Contact</a></li>
-                    <li class="nav-item"><a href="#About">About</a></li>
-                    <li class="nav-item"><a href="#Cart">Cart</a></li>
-                </ul>
-    
-            <!--Mobile Navigation-->
-                <ul class="nav-list-mobile">
-                    <li class="nav-item-mobile"><a href="#Products"><i class="fa-solid fa-kitchen-set"></i></a></li>
-                    <li class="nav-item-mobile"><a href="contact.html"><i class="fa-solid fa-phone"></i></a></li>
-                    <li class="nav-item-mobile"><a href="#About"><i class="fa-solid fa-m"></i></a></li>
-                    <li class="nav-item-mobile"><a href="#Cart"><i class="fa-solid fa-cart-shopping"></i></a></li>
-                  </ul>
-            </nav>
+         <!-- Navigation Bar -->
+    <div class="heading">
+        <div class="logo">
+            <a href="index.html"><img src="assets/mudmade-logo.png" alt="Mudemade in cursive writing" width="400" height="100"></a>
         </div>
+        <nav class="nav">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="index.html">Home</a></li>
+                <li class="nav-item"><a href="products.html">Products</a></li>
+                <li class="nav-item"><a href="contact.html">Contact</a></li>
+                <li class="nav-item"><a href="#Cart">Cart</a></li>
+            </ul>
+
+        <!--Mobile Navigation-->
+            <ul class="nav-list-mobile">
+                <li class="nav-item-mobile"><a href="index.html"><i class="fa-solid fa-house"></i></a></li>
+                <li class="nav-item-mobile"><a href="products.html"><i class="fa-solid fa-kitchen-set"></i></a></li>
+                <li class="nav-item-mobile"><a href="contact.html"><i class="fa-solid fa-phone"></i></a></li>
+                <li class="nav-item-mobile"><a href="#Cart"><i class="fa-solid fa-cart-shopping"></i></a></li>
+              </ul>
+        </nav>
+    </div>
     
         <!-- Main Content -->
         <main>
             <!-- Hero Banner -->
             <header class="hero-banner">
              <div class="hero-image">
-                    <img src="assets/contact.jpg" alt="Two people working on a ceramic project with clay in hands" width="700" height="700" id="hero-image"></div>
+                    <img src="assets/contact.jpg" alt="Two women happily looking at dishware on a table" width="700" height="700" id="hero-image"></div>
                 <div class="hero-text">
                 <h1 class="contact-heading">Contact Us</h1>
             </header>
     
-    <!-- Form -->
-<!-- Contact Section -->
-<section class="content-section">
-    <div class="container">
-        <div class="text-column">
+        <!-- Form -->
+        <!-- Contact Section -->
+        <section class="contact-section">
+        <div class="contact-container">
+        <div class="form">
             <div class="form-header">
 
-            <!--Change up-->
-                <h2>We'd Love to Hear from You!</h2>
-                <p>Send us a message</p> 
+                <h2>We'd Love to Hear from You</h2>
+                <p>Other questions and inquires? Send us a message!</p> 
                 <p><i class="fa-regular fa-envelope"></i></p>
 
             </div>
@@ -84,16 +85,16 @@
                 <h3>Name</h3>
 
                 <div class="name-box">
-                    <!-- First Name Box (insert placeholder?)-->
+                    <!-- First Name Box-->
                     <div class="name-field">
                         <label for="fname">First Name</label>
-                        <input type="text" id="fname">
+                        <input type="text" id="fname" placeholder="Harry">
                     </div>
 
                     <!-- Last Name Box -->
                     <div class="name-field">
                         <label for="lname">Last Name</label>
-                        <input type="text" id="lname">
+                        <input type="text" id="lname" placeholder="Potter"><br><br>
                     </div>
                 </div>
 
@@ -120,8 +121,8 @@
                 <input type="submit" id="submit-button" name="submit" value="Send Message">
             </div>
             </form>
-        </div> <!-- End of text-column -->
-    </div> <!-- End of container -->
+        </div>
+    </div> 
 </section>
 
      <!-- Footer Section -->

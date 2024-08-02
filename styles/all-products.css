@@ -1,0 +1,110 @@
+/*All Products Section*/
+.pbanner-text{
+    color: #f9ffef;
+}
+
+.hero-text .pbanner-p {
+    color: #f9ffef;
+}
+
+/*Product Navigation*/
+.p-bar{
+    background-color: #44423d48;
+    padding: 10px;
+}
+
+.p-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    
+}
+
+.p-item {
+    color:#3d280f;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px 15px;
+    border-radius: 2px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.p-item:hover {
+    color: #f9ffef;
+   
+}
+
+.p-button{
+    font-family:'Montserrat', Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    background-color: #3d280f;
+    color: #f9ffef;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.p-button:hover{
+    background-color: #9b59b6;
+}
+
+/*Workshop section*/
+.services-container{
+    max-width: 730px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+.services-section{
+    background-color: #d6cfc2;
+    text-align: center;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+.services-content{
+    color: #3d280f;
+}
+
+.services-info ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0; 
+}
+
+.services-info li {
+    margin-bottom: 10px; 
+}
+
+.cta-button{
+    font-family:'Montserrat', Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    background-color: #3d280f;
+    color: #f9ffef;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover{
+    background-color: #59b66f;
+}
+
+/*API Section*/
+.api-section{
+    text-align: center;
+}
+

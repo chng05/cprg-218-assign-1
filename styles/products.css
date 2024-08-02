@@ -56,3 +56,84 @@
         gap: 24px;
     }
 }
+
+.card-section {
+    font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+    text-align: center;
+    background-color: #c7b6a3;
+    color: #3d230f;
+    padding: 20px;
+}
+
+.card-section h2 {
+    font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 20px;
+    margin: 10px auto;
+}
+
+.card {
+    text-align: center;
+    color: #3d230f;
+}
+
+.card-item a{
+    color: #3d230f;
+    text-decoration: none;
+}
+
+.card-item a:hover{
+    color: #f4eBD7;
+    text-decoration: none;
+}
+
+.card h3{
+    font-weight: 600;
+}
+
+#producta, #productb, #productc {
+    border-radius: 15%;
+}
+
+/*More Products*/
+.more-products-link {
+    color: inherit;
+    font-size: 15px;
+    text-align: center;
+  }
+  
+  .more-products-link a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .more-products-link a:hover {
+    color: #f4eBD7;
+  }
+  
+  .more-products-link a i {
+    margin-left: 5px;
+    font-size: 16px;
+  }
+
+/* Media Queries for Large Screens*/
+@media (min-width: 1199px) {
+    .card-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 12px;
+    }
+}
+
+/* Media Queries for Tablets */
+@media (min-width: 768px) and (max-width: 1199px) {
+    .card-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 24px;
+    }
+}
