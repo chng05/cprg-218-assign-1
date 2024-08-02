@@ -1,57 +1,99 @@
 .footer {
-    background: 
-    linear-gradient(to bottom right,
+  background: linear-gradient(
+    to bottom right,
     rgba(139, 158, 108, 0.9),
-    rgba(112, 133, 74, 0.3));
-    color: #3d230f;
-    font-family: 'Montserrat', Helvetica, Arial, sans-serif;
-    font-weight: 500;
-    font-size: 13px;
-    line-height: 20px;
-    padding: 10px 0;
-    text-align: center;
-    z-index: 1;
-    width: 100%;
+    rgba(112, 133, 74, 0.3)
+  );
+  color: #3d230f;
+  font-family: "Montserrat", Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 20px;
+  padding: 10px 0;
+  text-align: center;
+  z-index: 1;
+  width: 100%;
 }
 
 .footer-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
 }
 
 .footer-info {
-    margin-bottom: 25px;
+  margin-bottom: 25px;
 }
 
 .footer-link {
-    text-decoration: none;
-    color: #3d230f;
+  text-decoration: none;
+  color: #3d230f;
 }
 
 .footer-links {
-    margin-bottom: 25px;
+  margin-bottom: 25px;
 }
 
 /*Copyright*/
 .footer-bottom {
-    margin-top: 20px;
-    font-weight: 500;
-    text-align: center;
+  margin-top: 20px;
+  font-weight: 500;
+  text-align: center;
 }
 
 /*Tablet and Desktop Media Query*/
 @media screen and (min-width: 768px) {
-.footer {
-    text-align: left;}
+  .footer {
+    text-align: left;
+  }
 
-.footer-content {
+  .footer-content {
     flex-direction: row;
-    justify-content: space-between;}
+    justify-content: space-between;
+  }
 
-.footer-bottom {
+  .footer-bottom {
     padding-bottom: 10px;
+  }
 }
+/* Color Palette Generator */
+
+.palette {
+  display: flex;
+  margin: 2%;
+}
+.color-box {
+  width: 100px;
+  height: 100px;
+  margin-right: 10px;
+  position: relative;
+}
+
+#generatePalette {
+  background-color: #3d280f;
+  color: #f9ffef;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 0.25rem;
+}
+#generatePalette:hover {
+  background-color: rgba(58, 65, 45, 0.9);
+  color: #f9ffef;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 0.25rem;
+}
+
+.hex-code {
+  position: absolute;
+  bottom: 7px;
+  left: 10px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 2px 5px;
+  border-radius: 3px;
+  font-size: 12px;
+  font-family: Arial, sans-serif;
 }
