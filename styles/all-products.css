@@ -105,13 +105,17 @@
 .api-section {
   text-align: center;
   background-color: #d6cfc2;
+  margin: 0;
+  padding: 15px;
 }
 
 .palette {
   display: flex;
-  align: center;
+  align-items: center;
+  justify-content: center;
   padding: 2%;
 }
+
 .color-box {
   width: 100px;
   height: 100px;
