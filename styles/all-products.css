@@ -104,14 +104,19 @@
 /*API Section*/
 .api-section {
   background-color: #d6cfc2;
+  margin: 0;
+  padding: 15px;
   text-align: center;
+
 }
 
 .palette {
   display: flex;
+  align-items: center;
   justify-content: center;
   padding: 2%;
 }
+
 .color-box {
   width: 100px;
   height: 100px;
