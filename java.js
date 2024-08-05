@@ -11,39 +11,7 @@ accordionItems.forEach((item) => {
     icon.textContent = content.classList.contains("active") ? "-" : "+";
   });
 });
-// Colour Palette Generator
-// document
-//   .getElementById("generatePalette")
-//   .addEventListener("click", generatePalette);
-
-// function generatePalette() {
-//   fetch("http://colormind.io/api/", {
-//     method: "POST",
-//     body: JSON.stringify({
-//       model: "default",
-//     }),
-//   })
-//     .then((response) => response.json())
-//     .then((data) => {
-//       displayPalette(data.result);
-//     })
-//     .catch((error) => {
-//       console.error("Error fetching the color palette:", error);
-//     });
-// }
-
-// function displayPalette(colors) {
-//   const paletteContainer = document.getElementById("paletteContainer");
-//   paletteContainer.innerHTML = ""; // Clear existing palette
-
-//   colors.forEach((color) => {
-//     const colorBox = document.createElement("div");
-//     colorBox.className = "color-box";
-//     colorBox.style.backgroundColor = `rgb(${color[0]}, ${color[1]}, ${color[2]})`;
-//     paletteContainer.appendChild(colorBox);
-//   });
-// }
-
+// API
 document
   .getElementById("generatePalette")
   .addEventListener("click", generatePalette);
