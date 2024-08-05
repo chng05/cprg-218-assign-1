@@ -14,7 +14,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
+   
   <!--Stylesheets-->
     <!--Home Page-->
     <link rel="stylesheet" href="styles/main.css">
@@ -67,39 +67,41 @@
                 <p class="pbanner-p">Explore our offerings</p>
             </div>
         </header>
+
+        <!--Product Nav Bar -->
+        <nav class="p-bar"> 
+            <div class="p-container">
+                <a href="#products" class="p-item">All Products</a>
+                <a href="#workshops" class="p-item">Workshops</a>
+                <a href="#color-generator" class="p-item">Colour Generator</a>
+            </div>
+        </nav>
         
       <!-- Products Section -->
     <section class="card-section" id="products">
-    <nav class="p-bar"> <!-- Changed to <nav> for semantic meaning -->
-        <div class="p-container">
-            <a href="#products" class="p-item">All Products</a>
-            <a href="#workshops" class="p-item">Workshops</a>
-            <a href="#color-generator" class="p-item">Colour Generator</a>
-        </div>
-    </nav>
     <h2>Kitchenware</h2>
     <div class="container">
         <div class="card-grid">
             <article class="card">
                 <h3>Handcrafted Mug</h3>
-                <img src="assets/mug.png" alt="Handcrafted Mug" width="250" height="250">
+                <img src="assets/mug.jpg" alt="Handcrafted Mug" width="250" height="250">
                 <h4>Mug</h4>
                 <p>Price: $20.00 CAD</p>
                 <button class="p-button">Add to Cart</button>
             </article>
 
             <article class="card">
-                <h3>Handcrafted Plate</h3>
-                <img src="assets/plate.png" alt="Handcrafted Plate" width="250" height="250">
-                <h4>Plate</h4>
+                <h3>Handcrafted Cup</h3>
+                <img src="assets/cup.jpg" alt="Teacup" width="250" height="250">
+                <h4>Tea Cup</h4>
                 <p>Price: $25.00 CAD</p>
                 <button class="p-button">Add to Cart</button>
             </article>
             
             <article class="card">
-                <h3>Handcrafted Bowl</h3>
-                <img src="assets/bowl.png" alt="Handcrafted Bowl" width="250" height="250">
-                <h4>Bowl</h4>
+                <h3>Handcrafted Teapot</h3>
+                <img src="assets/teapot.jpg" alt="Purple Teapot" width="250" height="250">
+                <h4>Teapot</h4>
                 <p>Price: $15.00 CAD</p>
                 <button class="p-button">Add to Cart</button>
             </article>
@@ -128,9 +130,9 @@
                     </article>
                     
                     <article class="card">
-                        <h3>Handcrafted Plate</h3>
+                        <h3>Decorative Plate</h3>
                         <img src="assets/plate.jpg" alt="Handcrafted Plate" width="250" height="250">
-                        <h4>Decorative Plate</h4>
+                        <h4>Plate</h4>
                         <p>Price: $20.00 CAD</p>
                         <button class="p-button">Add to Cart</button>
                     </article>
@@ -142,10 +144,10 @@
         <section class="services-section" id="workshops">
         <h2>Pottery Workshops</h2>
         <section class="image-gallery">
-            <img src="assets/workshop.jpg" alt="Pottery Workshop 1" width="800" height="500">
+        <img src="assets/workshop.jpg" alt="Pottery Workshop 1" width="800" height="500">
         </section>
 
-        <div class="services-content"></div>
+        <div class="services-content">
         <p>Immerse in the art of ceramics. Engage in our workshops!</p>
         <p>Perfect for beginners and seasoned potters alike, our classes offer a hands-on experience in crafting a variety of beautiful pieces.</p>
         
@@ -158,8 +160,11 @@
         </div>
 
         <button class="cta-button">View Workshop Schedule & Book Your Spot</button>
-    </div>
+
+        </div>
+
     </section>
+
     <!-- API Colour Generator Section -->
     <section 
     class="api-section" id="color-generator">
