@@ -98,18 +98,18 @@
 }
 
 .cta-button:hover {
-  background-color: #59b66f;
+  background-color: #9b59b6;
 }
 
 /*API Section*/
 .api-section {
-  text-align: center;
   background-color: #d6cfc2;
+  text-align: center;
 }
 
 .palette {
   display: flex;
-  align: center;
+  justify-content: center;
   padding: 2%;
 }
 .color-box {
@@ -117,6 +117,7 @@
   height: 100px;
   margin-right: 10px;
   position: relative;
+  border-radius: 10%;
 }
 
 #generatePalette {
@@ -127,7 +128,7 @@
   border-radius: 0.25rem;
 }
 #generatePalette:hover {
-  background-color: rgba(58, 65, 45, 0.9);
+  background-color: #9b59b6;
   color: #f9ffef;
   padding: 12px 24px;
   border: none;
