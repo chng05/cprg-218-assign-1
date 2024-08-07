@@ -20,7 +20,7 @@ document.getElementById("generatePalette").addEventListener("click", () => {
 function generatePalette() {
   console.log("Starting generatePalette function");
 
-  fetch("http://colormind.io/api/", {
+  fetch("https://colormind.io/api/", {
     method: "POST",
     body: JSON.stringify({
       model: "default",
@@ -44,7 +44,9 @@ function generatePalette() {
 function displayPalette(colors) {
   console.log("Starting displayPalette function with colors:", colors);
   const paletteContainer = document.getElementById("paletteContainer");
-  paletteContainer.innerHTML = ""; // Clear existing palette
+  paletteContainer.innerHTML = "";
+
+  // Clear existing palette
 
   colors.forEach((color) => {
     const colorBox = document.createElement("div");
