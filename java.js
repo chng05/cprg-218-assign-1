@@ -88,9 +88,9 @@ function generatePalette() {
   fetch("https://colormind.io/api/", {
     // Changed to https
     method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
+    // headers: {
+    //   "Content-Type": "application/json",
+    // },
     body: JSON.stringify({
       model: "default",
     }),
