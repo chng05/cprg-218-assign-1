@@ -8,7 +8,6 @@
 }
 
 /*Product Navigation*/
-
 .p-bar {
   background-color:#3d280f90;
   padding: 10px;
@@ -86,7 +85,7 @@
   color: #f9ffef;
   border: none;
   border-radius: 5px;
-  padding: 10px;
+  padding: 13px;
   text-decoration: none;
   display: inline-block;
   margin-top: 10px;
@@ -99,6 +98,13 @@
   background-color: #9b59b6;
 }
 
+.horizontal-line-p {
+  border: none;
+  border-top: 0.5px solid #3d280f45;
+  margin: 20px auto;
+  width: 900px; 
+}
+
 /*API Section*/
 .api-section {
   background-color: #d6cfc2;
@@ -106,7 +112,6 @@
   margin: 0;
   padding: 15px;
   text-align: center;
-
 }
 
 .palette {
@@ -131,6 +136,7 @@
   padding: 12px 24px;
   border: none;
   border-radius: 0.25rem;
+  transition: background-color 0.3s;
 }
 
 #generatePalette:hover {
