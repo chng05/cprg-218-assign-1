@@ -12,8 +12,7 @@ accordionItems.forEach((item) => {
   });
 });
 // API
-document.getElementById("generatePalette");
-.addEventListener("click", () => {
+document.getElementById("generatePalette").addEventListener("click", () => {
   console.log("Generate palette button clicked");
   generatePalette();
 });
@@ -21,7 +20,7 @@ document.getElementById("generatePalette");
 function generatePalette() {
   console.log("Starting generatePalette function");
 
-  fetch("http://colormind.io/api/", {
+  fetch("https://colormind.io/api/", {
     method: "POST",
     body: JSON.stringify({
       model: "default",
