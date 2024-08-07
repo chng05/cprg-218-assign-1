@@ -12,7 +12,8 @@ accordionItems.forEach((item) => {
   });
 });
 // API
-document.getElementById("generatePalette").addEventListener("click", () => {
+document.getElementById("generatePalette");
+.addEventListener("click", () => {
   console.log("Generate palette button clicked");
   generatePalette();
 });
