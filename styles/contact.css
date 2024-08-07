@@ -1,0 +1,105 @@
+.contact-container {
+    max-width: 730px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+/*Centering and Layout */
+.contact-section{
+    background-color: #d6cfc2;
+    color: #3d280f;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: left;
+}
+
+/*To not have a squished hero image */
+.hero-image img {
+    width: 100%;
+    height: auto;
+    object-fit: contain; 
+    
+}
+
+.contact-heading {
+    color: #f9ffef;
+}
+
+/*Heading + Paragraph*/
+.form-header,.message-button {
+    text-align: center;
+    padding: 20px;
+}
+
+.fa-envelope{
+    font-size: 20px;
+}
+
+/*H-Line under Heading*/
+.horizontal-line{
+    border-top: 0.5px solid #3d280f45;
+}
+
+/*F/L Name Box*/
+.name-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.name-box label {
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+.name-box input {
+    flex: 1;
+    margin-right: 150px; 
+}
+
+.name-box input[type="text"] {
+    max-width: 100%;
+}
+
+/*Form Headings*/
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+/*Message button*/
+input[type="submit"] {
+    font-family:'Montserrat', Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    background-color: #3d280f;
+    color: #f9ffef;
+    border: none;
+    border-radius: 0.25rem;
+    padding: 12px 24px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #9b59b6;
+}

@@ -1,22 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mudmade Artisan Pottery</title>
 
     <!--Font Awesome Icons-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+      
     <!--Google font-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"/>
 
-    
-    <!--Stylesheets-->
+   <!--Stylesheets-->
+    <!--Home Page-->
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/navigation.css">
     <link rel="stylesheet" href="styles/hero.css">
@@ -24,170 +23,184 @@
     <link rel="stylesheet" href="styles/products.css">
     <link rel="stylesheet" href="styles/accordion.css">
     <link rel="stylesheet" href="styles/footer.css">
+    
+    <!--Other Pages-->
+    <link rel="stylesheet" href="styles/contact.css">
+    <link rel="stylesheet" href="styles/all-products.css">
 
 </head>
 
 <body>
-
     <!-- Navigation Bar -->
-    <div class="heading">
+    <header class="heading">
         <div class="logo">
-            <a href="index.html"><img src="assets/mudmade-logo.png" alt="Mudemade in cursive writing" width="400" height="100"></a>
+            <a href="index.html"><img src="assets/mudmade-logo.png" alt="Mudmade logo in cursive writing" width="400" height="100"></a>
         </div>
         <nav class="nav">
             <ul class="nav-list">
-                <li class="nav-item"><a href="#Products">Products</a></li>
-                <li class="nav-item"><a href="#Contact">Contact</a></li>
-                <li class="nav-item"><a href="#About">About</a></li>
+                <li class="nav-item"><a href="index.html">Home</a></li>
+                <li class="nav-item"><a href="products.html">Products</a></li>
+                <li class="nav-item"><a href="contact.html">Contact</a></li>
                 <li class="nav-item"><a href="#Cart">Cart</a></li>
             </ul>
 
-        <!--Mobile Navigation-->
+            <!-- Mobile Navigation -->
             <ul class="nav-list-mobile">
-                <li class="nav-item-mobile"><a href="#Products"><i class="fa-solid fa-kitchen-set"></i></a></li>
-                <li class="nav-item-mobile"><a href="#Contact"><i class="fa-solid fa-phone"></i></a></li>
-                <li class="nav-item-mobile"><a href="#About"><i class="fa-solid fa-m"></i></a></li>
+                <li class="nav-item-mobile"><a href="index.html"><i class="fa-solid fa-house"></i></a></li>
+                <li class="nav-item-mobile"><a href="products.html"><i class="fa-solid fa-kitchen-set"></i></a></li>
+                <li class="nav-item-mobile"><a href="contact.html"><i class="fa-solid fa-phone"></i></a></li>
                 <li class="nav-item-mobile"><a href="#Cart"><i class="fa-solid fa-cart-shopping"></i></a></li>
-              </ul>
+            </ul>
         </nav>
-    </div>
-
+    </header>
+    
     <!-- Main Content -->
     <main>
-        <!-- Hero Banner -->
-        <header class="hero-banner">
-         <div class="hero-image">
-                <img src="assets/hero.jpg" alt="Assorted pottery pieces with unique designs displayed on the floor" width="700" height="700" id="hero-image"></div>
-            <div class="hero-text">
-            <h1>Pottery for the Soul</h1>
-            <p>Let's get Muddy</p></div>
-            <button class="explore-button">Explore</button>
-        </header>
+      <!-- Hero Banner -->
+      <header class="hero-banner">
+        <div class="hero-image">
+        <img src="assets/hero.jpg" alt="Assorted pottery pieces with unique designs displayed on the floor" width="700" height="700" id="hero-image"/></div>
+        <div class="hero-text">
+          <h1>Pottery for the Soul</h1>
+          <p>Let's get Muddy</p></div>
+        <button class="explore-button">Explore</button>
+      </header>
 
-        <!-- Content Section -->
-   <section class="content-section">
-    <div class="container">
-        <div class="content-column">
+      <!-- Content Section -->
+      <section class="content-section">
+        <div class="container">
+          <div class="content-column">
             <h2>mudmade</h2>
             <h3>Artisan Creations</h3>
-            <p>Welcome to Mud Made, where artistry and craftsmanship blend to create unique, handmade pieces for your home. At Mud Made, we believe in the beauty of individuality and the charm of artisanal creations.</p>
-            
+            <p>Welcome to Mud Made, where artistry and craftsmanship blend to
+               create unique, handmade pieces for your home. At Mud Made, we
+               believe in the beauty of individuality and the charm of artisanal
+               creations.</p>
+              
             <h3>Our Mission</h3>
-            <p>Our mission is to bring a touch of uniqueness to your kitchen, living spaces, and beyond through our carefully crafted kitchenware, home decor, and engaging workshops. Every Mud Made piece begins with a lump of clay and a vision.</p>
+            <p>Our mission is to bring a touch of uniqueness to your kitchen,
+              living spaces, and beyond through our carefully crafted
+              kitchenware, home decor, and engaging workshops. Every Mud Made
+              piece begins with a lump of clay and a vision.</p>
             
             <h3>Sustainability & Eco-Friendly Practices</h3>
-            <p>Our skilled artisans shape and mold each item by hand, ensuring that no two pieces are exactly alike. We take pride in using sustainable materials and eco-friendly practices throughout our process, from sourcing our clay to the final firing in our kilns.</p>
-        </div>
+            <p>Our skilled artisans shape and mold each item by hand, ensuring
+              that no two pieces are exactly alike. We take pride in using
+              sustainable materials and eco-friendly practices throughout our
+              process, from sourcing our clay to the final firing in our kilns.</p>
+          </div>
 
-        <!-- Embedded Video -->
-        <div class="video-container">
-            <video style="width: 100%; height: auto;" autoplay loop muted>
-                <source src="assets/video01.mp4" type="video/mp4">
-                <source src="assets/video02.mp4" type="video/mp4">          
-                Your browser does not support the video tag.
+          <!-- Embedded Video -->
+          <div class="video-container">
+            <video style="width: 100%; height: auto" autoplay loop muted>
+              <source src="assets/video01.mp4" type="video/mp4" />
+              <source src="assets/video02.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
             </video>
+          </div>
+        </div>
+      </section>
+
+      <!-- Featured Products Card Section -->
+      <section class="card-section">
+        <h2>Featured Products</h2>
+        <div class="container">
+          <div class="card-grid">
+  
+            <div class="card">
+            <img src="assets/product03.png" alt="Kitchenware" id="producta" width="280px" height="280px">
+              <h3>Kitchenware</h3>
+            </div>
+
+            <div class="card">
+              <img src="assets/product01.jpg" alt="Home Decor" id="productb" width="280px" height="280px">
+              <h3>Home Decor</h3>
+          </div>
+
+            <div class="card">
+              <img src="assets/product04.jpg" alt="Workshops"  id="productc" width="280px" height="280px">
+              <h3>Workshops</h3>
+          </div>
+        </div>
         </div>
 
-    </div>
-    </section>
-
-        <!-- Featured Products Card Section -->
-        <section class="card-section">
-            <h2>Featured Products</h2>
-            <div class="container">
-               
-                <div class="card-grid">
-                   
-                    <div class="card">
-                      <img src="assets/product03.png" alt="Kitchenware" id="producta" width="280" height="280">
-                        <h3 class="card-item"><a href="#Kitchenware">Kitchenware</a></h3>
-                    </div>
-                    <div class="card">
-                        <img src="assets/product01.jpg" alt="Home Decor" id="productb" width="280" height="280">
-                        <h3 class="card-item"><a href="#HomeDecor">Home Decor</a></h3>
-                    </div>
-                    <div class="card">
-                        <img src="assets/product04.jpg" alt="Workshops" id="productc" width="280" height="280">
-                        <h3 class="card-item"><a href="#Workshops">Workshops</a></h3>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Accordion Section -->
-
-         <section class="accordion-section">
-            <div class="accordion-container">
-                <h2>Shipping FAQs</h2>
-
-                <!-- Accordion -->
-                <div class="accordion">
-                    <!-- Accordion Item 1 -->
-                    <div class="accordion-item">
-                        <div class="accordion-header" tabindex="0" role="button" aria-expanded="false">
-                            <h3>Do you offer shipping?</h3>
-                            <span class="accordion-icon">+</span>
-                        </div>
-                        <div class="accordion-content">
-                            <p>Yes, we offer shipping for all our pottery items.</p>
-                        </div>
-                    </div>
+        <!--More Products-->
+        <h4 class="more-products-link"><a href="products.html">More Products<i class="fa-solid fa-arrow-right"></i></a></h4>
         
-                    <!-- Accordion Item 2 -->
-                    <div class="accordion-item">
-                        <div class="accordion-header" tabindex="0" role="button" aria-expanded="false">
-                            <h3>How much does shipping cost?</h3>
-                            <span class="accordion-icon">+</span>
-                        </div>
-                        <div class="accordion-content">
-                            <p>Shipping costs vary based on the size and weight of your order and your location.
-                                You can get an estimate during checkout.</p>
-                        </div>
-                    </div>
-        
-                    <!-- Accordion Item 3 -->
-                    <div class="accordion-item">
-                        <div class="accordion-header" tabindex="0" role="button" aria-expanded="false">
-                            <h3>Do you offer international shipping?</h3>
-                            <span class="accordion-icon">+</span>
-                        </div>
-                        <div class="accordion-content">
-                            <p>Yes, we ship internationally to most countries.</p>
-                        </div>
-                    </div>
-        
-                    <!-- Accordion Item 4 -->
-                    <div class="accordion-item">
-                        <div class="accordion-header" tabindex="0" role="button" aria-expanded="false">
-                            <h3>How long will it take to receive my order?</h3>
-                            <span class="accordion-icon">+</span>
-                        </div>
-                        <div class="accordion-content">
-                            <p>Domestic orders typically arrive within 5 business days after processing.
-                                International orders may take longer due to customs.</p>
-                        </div>
-                    </div>
-        
-                    <!-- Accordion Item 5 -->
-                    <div class="accordion-item">
-                        <div class="accordion-header" tabindex="0" role="button" aria-expanded="false">
-                            <h3>Can I track my order?</h3>
-                            <span class="accordion-icon">+</span>
-                        </div>
-                        <div class="accordion-content">
-                            <p>Yes, once shipped, we provide a tracking number for you to monitor your shipment's progress.</p>
-                        </div>
-                    </div>
-                </div>
+      </section>
+
+      <!-- Accordion Section -->
+      <section class="accordion-section">
+        <div class="accordion-container">
+          <h2>Shipping FAQs</h2>
+
+          <!-- Accordion -->
+          <div class="accordion">
+            <!-- Accordion Item 1 -->
+            <div class="accordion-item">
+              <div class="accordion-header" tabindex="0" role="button" aria-expanded="false">
+              <h3>Do you offer shipping?</h3>
+              <span class="accordion-icon">+</span></div>
+
+              <div class="accordion-content">
+              <p>Yes, we offer shipping for all our pottery items.</p></div>
+
             </div>
 
+             <!-- Accordion Item 2 -->
+             <div class="accordion-item">
+              <div class="accordion-header" tabindex="0" role="button" aria-expanded="false">
+              <h3>How much does shipping cost?</h3>
+              <span class="accordion-icon">+</span></div>
+
+              <div class="accordion-content">
+              <p>Shipping costs vary based on the size and weight of your order and your location.
+                You can get an estimate during checkout.</p></div>
+
+            </div>
+
+            <!-- Accordion Item 3 -->
+            <div class="accordion-item">
+              <div class="accordion-header" tabindex="0" role="button" aria-expanded="false">
+              <h3>Do you offer international shipping?</h3>
+              <span class="accordion-icon">+</span></div>
+
+              <div class="accordion-content">
+              <p>Yes, we ship internationally to most countries.</p></div>
+
+            </div>
+
+            <!-- Accordion Item 4 -->
+            <div class="accordion-item">
+              <div class="accordion-header" tabindex="0" role="button" aria-expanded="false">
+              <h3>How long will it take to receive my order?</h3>
+              <span class="accordion-icon">+</span></div>
+
+              <div class="accordion-content">
+              <p>Domestic orders typically arrive within 5 business days after
+                processing. International orders may take longer due to
+                customs.</p></div>
+
+            </div>
+
+            <!-- Accordion Item 5 -->
+            <div class="accordion-item">
+              <div class="accordion-header" tabindex="0" role="button" aria-expanded="false">
+              <h3>Can I track my order?</h3>
+              <span class="accordion-icon">+</span></div>
+
+              <div class="accordion-content">
+              <p>Yes, once shipped, we provide a tracking number for you to monitor your shipment's progress.</p></div>
+
+            </div>
+            </div>
+
+            <!--More FAQS-->
             <h4 class="more-faqs-link"><a href="#MoreFAQS">More FAQS<i class="fa-solid fa-arrow-right"></i></a></h4>
-
-        </section>
-        
+      </section>
     </main>
 
-    <!-- Footer Section -->
+   <!-- Footer Section -->
     <footer class="footer">
         <div class="footer-container">
             <div class="footer-content">
@@ -202,7 +215,7 @@
                 <!-- Footer Links -->
                 <div class="footer-links">
                     <h3>Company</h3>
-                    <p><a href="#" target="_blank" rel="noopener noreferrer" class="footer-link">How Mudemade works</a></p>
+                    <p><a href="#" target="_blank" rel="noopener noreferrer" class="footer-link">How Mudmade works</a></p>
                     <p><a href="#" target="_blank" rel="noopener noreferrer" class="footer-link">Pricing</a></p>
                     <p><a href="#" target="_blank" rel="noopener noreferrer" class="footer-link">Docs</a></p>
                 </div>
@@ -233,6 +246,5 @@
 
      <!-- JavaScript File -->
      <script src="java.js"></script>
-
 </body>
 </html>
