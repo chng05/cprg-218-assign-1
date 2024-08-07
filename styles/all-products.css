@@ -1,17 +1,17 @@
 /*All Products Section*/
 .pbanner-text {
-  color: #f9ffef;
+  color: #1c1518;
 }
 
 .hero-text .pbanner-p {
-  color: #f9ffef;
+  color: #1c1518;
 }
 
 /*Product Navigation*/
 .p-bar {
-  background-color:#3d280f90;
+  background-color: #3d280f90;
   padding: 10px;
-  }
+}
 
 .p-container {
   display: flex;
@@ -108,7 +108,7 @@
 /*API Section*/
 .api-section {
   background-color: #d6cfc2;
-  color:#3d280f;
+  color: #3d280f;
   margin: 0;
   padding: 15px;
   text-align: center;
