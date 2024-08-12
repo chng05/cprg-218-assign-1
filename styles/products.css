@@ -1,8 +1,9 @@
+/*Product Section*/
 .card-section {
-    font-family: 'Montserrat', Helvetica, Arial, sans-serif;
-    text-align: center;
     background-color: #c8b197;
     color: #3d230f;
+    font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+    text-align: center;
     padding: 20px;
 }
 
@@ -119,7 +120,7 @@
   
   .more-products-link a i {
     margin-left: 5px;
-    font-size: 16px;
+    font-size: 13px;
   }
 
 /* Media Queries for Large Screens*/
