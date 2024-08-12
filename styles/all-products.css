@@ -107,8 +107,6 @@
   background-color: #9b59b6;
 }
 
-/*API Section*/
-
 /*Tablet + Desktop Media Query*/
 @media (min-width: 768px) {
   /*P-Nav*/
@@ -148,23 +146,38 @@
   }
 
   /*API Section*/
-  .api-section {
-    font-size: 15px;
+
+  .container {
+    text-align: center;
   }
 
-  .color-box {
+  #generateButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    background-color: #333;
+    color: white;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+
+  #paletteContainer {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  .colorBox {
     width: 100px;
     height: 100px;
-  }
-
-  .hex-code {
-    position: absolute;
-    bottom: 7px;
-    left: 10px;
-    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: white;
-    padding: 2px 5px;
-    font-size: 12px;
-    border-radius: 3px;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
 }
