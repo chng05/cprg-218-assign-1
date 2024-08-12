@@ -18,61 +18,80 @@ document.getElementById("generatePalette").addEventListener("click", () => {
 });
 
 function generatePalette() {
-  console.log("Starting generatePalette function");
+  console.log("Starting palette generation...");
 
-  fetch("http://colormind.io/api/", {
+  const json_data = {
+    mode: "transformer",
+    num_colors: 4,
+    temperature: "1.0",
+    num_results: 1,
+    adjacency: [
+      "0",
+      "65",
+      "45",
+      "35",
+      "65",
+      "0",
+      "35",
+      "65",
+      "45",
+      "35",
+      "0",
+      "35",
+      "35",
+      "65",
+      "35",
+      "0",
+    ],
+    palette: ["-", "-", "-", "-"],
+  };
+
+  console.log("Sending data to API:", json_data);
+
+  fetch("https://api.huemint.com/color", {
     method: "POST",
-    body: JSON.stringify({
-      model: "default",
-    }),
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(json_data),
   })
     .then((response) => {
       console.log("Received response from API:", response);
       return response.json();
     })
     .then((data) => {
-      console.log("API data received:", data);
-      displayPalette(data.result);
+      console.log("Parsed JSON data:", data);
+
+      const palette = data.results[0].palette;
+      console.log("Generated palette:", palette);
+
+      const paletteContainer = document.getElementById("paletteContainer");
+
+      // Clear the existing palette
+      paletteContainer.innerHTML = "";
+      console.log("Cleared existing palette.");
+
+      // Display the new palette
+      palette.forEach((color) => {
+        const colorBox = document.createElement("div");
+        colorBox.className = "colorBox";
+        colorBox.style.backgroundColor = color;
+        colorBox.textContent = color;
+        paletteContainer.appendChild(colorBox);
+        console.log("Added color to palette:", color);
+      });
+
+      console.log("Palette generation completed.");
     })
     .catch((error) => {
-      console.error("Error fetching the color palette:", error);
+      console.error("An error occurred while generating the palette:", error);
+      alert("An error occurred while generating the palette.");
     });
-
-  console.log("Ending generatePalette function");
 }
 
-function displayPalette(colors) {
-  console.log("Starting displayPalette function with colors:", colors);
-  const paletteContainer = document.getElementById("paletteContainer");
-  paletteContainer.innerHTML = "";
-
-  // Clear existing palette
-
-  colors.forEach((color) => {
-    const colorBox = document.createElement("div");
-    colorBox.className = "color-box";
-    const rgb = `rgb(${color[0]}, ${color[1]}, ${color[2]})`;
-    colorBox.style.backgroundColor = rgb;
-
-    const hexCode = rgbToHex(color[0], color[1], color[2]);
-    const hexCodeElement = document.createElement("div");
-    hexCodeElement.className = "hex-code";
-    hexCodeElement.innerText = hexCode;
-
-    colorBox.appendChild(hexCodeElement);
-    paletteContainer.appendChild(colorBox);
+document
+  .getElementById("generateButton")
+  .addEventListener("click", function () {
+    console.log("Generate Palette button clicked.");
+    generatePalette();
   });
-
-  console.log("Ending displayPalette function");
-}
-
-function componentToHex(c) {
-  console.log("Converting component to hex:", c);
-  const hex = c.toString(16);
-  return hex.length == 1 ? "0" + hex : hex;
-}
-
-function rgbToHex(r, g, b) {
-  console.log("Converting RGB to hex:", r, g, b);
-  return "#" + componentToHex(r) + componentToHex(g) + componentToHex(b);
-}

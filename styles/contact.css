@@ -1,10 +1,10 @@
 .contact-container {
-    max-width: 730px;
+    max-width: 300px;
     margin: 0 auto;
     padding: 15px;
+    font-size: 14px;
 }
 
-/*Centering and Layout */
 .contact-section{
     background-color: #d6cfc2;
     color: #3d280f;
@@ -13,47 +13,45 @@
     text-align: left;
 }
 
-/*To not have a squished hero image */
-.hero-image img {
-    width: 100%;
-    height: auto;
-    object-fit: contain; 
-    
-}
-
 .contact-heading {
-    color: #f9ffef;
+    color: #3d280f;
+    text-shadow: 0 0 5px #f8f8f8, 0 0 5px #bab1a8;
 }
 
 /*Heading + Paragraph*/
 .form-header,.message-button {
     text-align: center;
     padding: 20px;
+    font-size: 14px;
 }
 
 .fa-envelope{
     font-size: 20px;
 }
 
-/*H-Line under Heading*/
+/*Horizontal Line under Heading*/
 .horizontal-line{
     border-top: 0.5px solid #3d280f45;
 }
 
+/*Form*/
 /*F/L Name Box*/
 .name-box {
     display: flex;
     justify-content: space-between;
 }
 
+.name-field{
+    padding-right: 15px;
+}
+
 .name-box label {
     display: block;
-    margin-bottom: 0.5em;
+    margin-bottom: 5px;
 }
 
 .name-box input {
     flex: 1;
-    margin-right: 150px; 
 }
 
 .name-box input[type="text"] {
@@ -78,19 +76,20 @@ textarea {
     box-sizing: border-box;
 }
 
+/*Message Box*/
 textarea {
     height: 100px;
     resize: vertical;
 }
 
-/*Message button*/
+/*Send Message button*/
 input[type="submit"] {
     font-family:'Montserrat', Helvetica, Arial, sans-serif;
-    font-size: 15px;
+    font-size: 14px;
     background-color: #3d280f;
     color: #f9ffef;
     border: none;
-    border-radius: 0.25rem;
+    border-radius: 4px;
     padding: 12px 24px;
     text-decoration: none;
     display: inline-block;
@@ -103,3 +102,20 @@ input[type="submit"] {
 input[type="submit"]:hover {
     background-color: #9b59b6;
 }
+
+/*Tablet & Desktop Media Q*/
+@media (min-width: 426px){
+
+.contact-container {
+    max-width: 600px;
+}
+
+.form-header{
+    font-size: 15px;
+}
+
+.name-field{
+    padding-right: 5px
+}
+}
+

@@ -1,37 +1,41 @@
 /*All Products Section*/
+/*All-Products Banner*/
 .pbanner-text {
-  color: #1c1518;
+  text-shadow: 0 0 5px #f8f8f8, 0 0 5px #958474;
 }
 
 .hero-text .pbanner-p {
   color: #1c1518;
+  font-size: 25px;
+  font-weight: 400;
+  text-shadow: 0 0 5px #f8f8f8, 0 0 5px #958474;
 }
 
 /*Product Navigation*/
-
 .p-bar {
-  background-color: #3d280f90;
-  padding: 10px;
+  background-color: #c0b9b0;
+  text-align: center;
+  padding: 8px;
 }
 
 .p-container {
   display: flex;
-  justify-content: center;
-  gap: 20px;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: center;
+  gap: 35px;
 }
 
 .p-item {
   color: #3d280f;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 500;
-  padding: 10px 15px;
-  border-radius: 2px;
-  transition: background-color 0.3s, color 0.3s;
 }
 
 .p-item:hover {
-  color: #f9ffef;
+  text-decoration: 1.5px solid underline;
+  text-underline-offset: 5px;
 }
 
 .p-button {
@@ -64,6 +68,10 @@
 }
 
 .services-content {
+  font-size: 14px;
+}
+
+.services-content {
   max-width: 800px;
   margin: 0 auto;
   padding: 15px;
@@ -81,7 +89,7 @@
 
 .cta-button {
   font-family: "Montserrat", Helvetica, Arial, sans-serif;
-  font-size: 15px;
+  font-size: 13px;
   background-color: #3d280f;
   color: #f9ffef;
   border: none;
@@ -99,6 +107,13 @@
   background-color: #9b59b6;
 }
 
+.horizontal-line-p {
+  border: none;
+  border-top: 0.5px solid #3d280f45;
+  margin: 20px auto;
+  width: 280px;
+}
+
 /*API Section*/
 .api-section {
   background-color: #d6cfc2;
@@ -108,9 +123,19 @@
   text-align: center;
 }
 
-.palette {
+#generateButton {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  background-color: #333;
+  color: white;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+#paletteContainer {
   display: flex;
-  align-items: center;
   justify-content: center;
   padding: 2%;
 }
