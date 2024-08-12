@@ -11,6 +11,7 @@ accordionItems.forEach((item) => {
     icon.textContent = content.classList.contains("active") ? "-" : "+";
   });
 });
+
 // API
 document.getElementById("generatePalette").addEventListener("click", () => {
   console.log("Generate palette button clicked");

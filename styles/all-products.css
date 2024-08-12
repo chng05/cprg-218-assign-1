@@ -107,20 +107,14 @@
   background-color: #9b59b6;
 }
 
-.horizontal-line-p {
-  border: none;
-  border-top: 0.5px solid #3d280f45;
-  margin: 20px auto;
-  width: 280px;
-}
-
 /*API Section*/
 .api-section {
   background-color: #d6cfc2;
   color: #3d280f;
+  font-size: 14px;
+  text-align: center;
   margin: 0;
   padding: 15px;
-  text-align: center;
 }
 
 #generateButton {
@@ -137,14 +131,14 @@
 #paletteContainer {
   display: flex;
   justify-content: center;
-  padding: 2%;
+  padding: 30px;
 }
 
 .color-box {
-  width: 100px;
-  height: 100px;
-  margin-right: 10px;
   position: relative;
+  width: 50px;
+  height: 50px;
+  margin-right: 5px;
   border-radius: 10%;
 }
 
@@ -154,7 +148,8 @@
   font-family: "Montserrat", Helvetica, Arial, sans-serif;
   padding: 12px 24px;
   border: none;
-  border-radius: 0.25rem;
+  border-radius: 4px;
+  transition: background-color 0.3s;
 }
 
 #generatePalette:hover {
@@ -162,16 +157,77 @@
   color: #f9ffef;
   padding: 12px 24px;
   border: none;
-  border-radius: 0.25rem;
+  border-radius: 4px;
 }
 
 .hex-code {
   position: absolute;
-  bottom: 7px;
-  left: 10px;
-  color: white;
+  bottom: -25px;
+  left: -27px;
+  margin: 0 25px;
   background-color: rgba(0, 0, 0, 0.5);
-  padding: 2px 5px;
+  color: white;
+  font-size: 8px;
+  padding: 2px;
   border-radius: 3px;
-  font-size: 12px;
+}
+
+/*Tablet + Desktop Media Query*/
+@media (min-width: 768px) {
+  /*P-Nav*/
+  .p-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .p-item {
+    font-size: 15px;
+    padding: 10px;
+  }
+
+  /*Products Photo*/
+  .all-products {
+    width: 250px;
+    height: 250px;
+  }
+
+  .p-button {
+    font-size: 13px;
+  }
+
+  /*Workshop Section*/
+  .service-image {
+    width: 600px;
+    height: 400px;
+  }
+
+  .services-content {
+    font-size: 15px;
+  }
+
+  .horizontal-line-p {
+    width: 700px;
+  }
+
+  /*API Section*/
+  .api-section {
+    font-size: 15px;
+  }
+
+  .color-box {
+    width: 100px;
+    height: 100px;
+  }
+
+  .hex-code {
+    position: absolute;
+    bottom: 7px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 2px 5px;
+    font-size: 12px;
+    border-radius: 3px;
+  }
 }
