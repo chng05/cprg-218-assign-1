@@ -148,8 +148,8 @@
   display: flex;
   align-items: flex-end; /* Align text to the bottom */
   justify-content: center;
-  color: #3d280f;
-  text-shadow: 0 0 5px #f8f8f8, 0 0 5px #958474;
+  color: #d6cfc2;
+  text-shadow: 0 0 5px #000000 , 0 0 5px #000000;
   font-size: 10px;
   font-weight: bold;
   padding: 5px;
