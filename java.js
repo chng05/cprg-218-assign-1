@@ -13,17 +13,17 @@ accordionItems.forEach((item) => {
 });
 
 // API
-
+// DOM added for best loading practices
 document.addEventListener("DOMContentLoaded", function () {
   console.log("DOM fully loaded and parsed. Setting up event listeners.");
-
+  // Generate button
   document
     .getElementById("generateButton")
     .addEventListener("click", function () {
       console.log("Generate Palette button clicked.");
       generatePalette();
     });
-
+  // Takes current json data linked from custom javascript
   function generatePalette() {
     console.log("Starting palette generation...");
 
@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", function () {
     };
 
     console.log("Sending data to API:", json_data);
-
+    // Takes palette data from HueMint
     fetch("https://api.huemint.com/color", {
       method: "POST",
       headers: {
@@ -78,7 +78,7 @@ document.addEventListener("DOMContentLoaded", function () {
         paletteContainer.innerHTML = "";
         console.log("Cleared existing palette.");
 
-        // Display the new palette
+        // Display the new palette colorBox
         palette.forEach((color) => {
           const colorBox = document.createElement("div");
           colorBox.className = "colorBox";
@@ -90,6 +90,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         console.log("Palette generation completed.");
       })
+      // Catching any errors
       .catch((error) => {
         console.error("An error occurred while generating the palette:", error);
         alert("An error occurred while generating the palette.");
