@@ -13,67 +13,87 @@ accordionItems.forEach((item) => {
 });
 
 // API
-document.getElementById("generatePalette").addEventListener("click", () => {
-  console.log("Generate palette button clicked");
-  generatePalette();
-});
-
-function generatePalette() {
-  console.log("Starting generatePalette function");
-
-  fetch("http://colormind.io/api/", {
-    method: "POST",
-    body: JSON.stringify({
-      model: "default",
-    }),
-  })
-    .then((response) => {
-      console.log("Received response from API:", response);
-      return response.json();
-    })
-    .then((data) => {
-      console.log("API data received:", data);
-      displayPalette(data.result);
-    })
-    .catch((error) => {
-      console.error("Error fetching the color palette:", error);
+// DOM added for best loading practices
+document.addEventListener("DOMContentLoaded", function () {
+  console.log("DOM fully loaded and parsed. Setting up event listeners.");
+  // Generate button
+  document
+    .getElementById("generateButton")
+    .addEventListener("click", function () {
+      console.log("Generate Palette button clicked.");
+      generatePalette();
     });
+  // Takes current json data linked from custom javascript
+  function generatePalette() {
+    console.log("Starting palette generation...");
 
-  console.log("Ending generatePalette function");
-}
+    const json_data = {
+      mode: "transformer",
+      num_colors: 4,
+      temperature: "1.0",
+      num_results: 1,
+      adjacency: [
+        "0",
+        "65",
+        "45",
+        "35",
+        "65",
+        "0",
+        "35",
+        "65",
+        "45",
+        "35",
+        "0",
+        "35",
+        "35",
+        "65",
+        "35",
+        "0",
+      ],
+      palette: ["-", "-", "-", "-"],
+    };
 
-function displayPalette(colors) {
-  console.log("Starting displayPalette function with colors:", colors);
-  const paletteContainer = document.getElementById("paletteContainer");
-  paletteContainer.innerHTML = "";
+    console.log("Sending data to API:", json_data);
+    // Takes palette data from HueMint
+    fetch("https://api.huemint.com/color", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(json_data),
+    })
+      .then((response) => {
+        console.log("Received response from API:", response);
+        return response.json();
+      })
+      .then((data) => {
+        console.log("Parsed JSON data:", data);
 
-  // Clear existing palette
+        const palette = data.results[0].palette;
+        console.log("Generated palette:", palette);
 
-  colors.forEach((color) => {
-    const colorBox = document.createElement("div");
-    colorBox.className = "color-box";
-    const rgb = `rgb(${color[0]}, ${color[1]}, ${color[2]})`;
-    colorBox.style.backgroundColor = rgb;
+        const paletteContainer = document.getElementById("paletteContainer");
 
-    const hexCode = rgbToHex(color[0], color[1], color[2]);
-    const hexCodeElement = document.createElement("div");
-    hexCodeElement.className = "hex-code";
-    hexCodeElement.innerText = hexCode;
+        // Clear the existing palette
+        paletteContainer.innerHTML = "";
+        console.log("Cleared existing palette.");
 
-    colorBox.appendChild(hexCodeElement);
-    paletteContainer.appendChild(colorBox);
-  });
+        // Display the new palette colorBox
+        palette.forEach((color) => {
+          const colorBox = document.createElement("div");
+          colorBox.className = "colorBox";
+          colorBox.style.backgroundColor = color;
+          colorBox.textContent = color;
+          paletteContainer.appendChild(colorBox);
+          console.log("Added color to palette:", color);
+        });
 
-  console.log("Ending displayPalette function");
-}
-
-function componentToHex(c) {
-  console.log("Converting component to hex:", c);
-  const hex = c.toString(16);
-  return hex.length == 1 ? "0" + hex : hex;
-}
-
-function rgbToHex(r, g, b) {
-  console.log("Converting RGB to hex:", r, g, b);
-  return "#" + componentToHex(r) + componentToHex(g) + componentToHex(b);
-}
+        console.log("Palette generation completed.");
+      })
+      // Catching any errors
+      .catch((error) => {
+        console.error("An error occurred while generating the palette:", error);
+        alert("An error occurred while generating the palette.");
+      });
+  }
+});
