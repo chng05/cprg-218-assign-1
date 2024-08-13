@@ -42,6 +42,28 @@
     border-radius: 15%;
 }
 
+/*More Products*/
+.more-products-link {
+    color: inherit;
+    font-size: 15px;
+    text-align: center;
+  }
+  
+  .more-products-link a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .more-products-link a:hover {
+    color: #f4eBD7;
+  }
+  
+  .more-products-link a i {
+    margin-left: 5px;
+    font-size: 13px;
+  }
+
 /* Media Queries for Large Screens*/
 @media (min-width: 1199px) {
     .card-grid {
@@ -100,28 +122,6 @@
 #producta, #productb, #productc {
     border-radius: 15%;
 }
-
-/*More Products*/
-.more-products-link {
-    color: inherit;
-    font-size: 15px;
-    text-align: center;
-  }
-  
-  .more-products-link a {
-    color: inherit;
-    text-decoration: none;
-    transition: color 0.3s ease;
-  }
-  
-  .more-products-link a:hover {
-    color: #f4eBD7;
-  }
-  
-  .more-products-link a i {
-    margin-left: 5px;
-    font-size: 13px;
-  }
 
 /* Media Queries for Large Screens*/
 @media (min-width: 1199px) {

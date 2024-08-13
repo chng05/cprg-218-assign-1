@@ -63,13 +63,12 @@
 
 /*More FAQS*/
 .more-faqs-link {
-  color: #42242e;
+  color: inherit;
   font-size: 20px;
   text-align: center;
 }
 
 .more-faqs-link a {
-  color: #2a1221;
   text-decoration: none;
   transition: color 0.3s ease;
 }
