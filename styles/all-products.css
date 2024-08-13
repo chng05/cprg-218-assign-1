@@ -99,14 +99,13 @@
 }
 
 /*API Section*/
-.container{
+.api-section{
   background-color: #d6cfc2;
   color: #3d280f;
   text-align: center;
-  padding: 35px;
-  font-size: 14px;
-}
-
+  padding: 10px;
+  font-size: 14px;}
+  
 #generateButton {
   font-family: "Montserrat", Helvetica, Arial, sans-serif;
   font-size: 13px;
@@ -117,7 +116,6 @@
   padding: 10px;
   text-decoration: none;
   display: inline-block;
-  margin-top: 10px;
   cursor: pointer;
   border-radius: 5px;
   transition: background-color 0.3s;
@@ -125,6 +123,15 @@
 
 #generateButton:hover {
   background-color: #9b59b6;
+}
+
+/*API Colour Generator*/
+.api-container{
+  background-color: #d6cfc2;
+  color: #3d280f;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
 }
 
 #paletteContainer {
@@ -187,7 +194,7 @@
   }
 
   /*API*/
-  .api-container{
+  .api-section{
     font-size: 15px;
   }
   
