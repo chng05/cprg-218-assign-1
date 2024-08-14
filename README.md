@@ -1,9 +1,7 @@
 Attributions & Citations
 
 Pexels Licensing Terms: https://www.pexels.com/license/
-
 Unsplash Licensing Terms: https://unsplash.com/license 
-
 Lummi Licensing Terms: https://www.lummi.ai/terms 
 
 “Close-Up View of a Person Doing Pottery” by Kelly under Pexels License. https://www.pexels.com/video/close-up-view-of-a-person-doing-pottery-5633999/ 
