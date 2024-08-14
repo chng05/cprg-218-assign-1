@@ -35,3 +35,26 @@ Untitled by Cup of Couple under Pexel License. https://www.pexels.com/es-es/foto
 “Artistic Ceramic Vase on Wooden Surface” by Daniel Norin under Lummi License. https://www.lummi.ai/photo/artistic-ceramic-vase-on-wooden-surface-fiv2m
 
 Huemint API https://api.huemint.com/color and https://huemint.com/about/ 
+
+
+Distributed Sections
+
+Meagan: 
+    Hero Banner
+    Card Section
+    Integrated API
+    
+Sherene
+    Content Section + Embedded Video
+    All Products Imaging + Attributions 
+    
+Christina
+    Navigation Bar + Footer
+    Linked Pages (Contact & Product)
+    
+Nico
+    Accordian
+    Accessibility Check 
+    (WAVES Evaluation)
+
+
