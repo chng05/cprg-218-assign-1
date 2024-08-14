@@ -40,21 +40,33 @@ Huemint API https://api.huemint.com/color and https://huemint.com/about/
 Distributed Sections
 
 Meagan: 
+
+
     Hero Banner
+    
     Card Section
+    
     Integrated API
     
-Sherene
+Sherene:
+
+
     Content Section + Embedded Video
+
     All Products Imaging + Attributions 
     
-Christina
+Christina:
+
     Navigation Bar + Footer
+    
     Linked Pages (Contact & Product)
     
-Nico
+Nico:
+
     Accordian
+    
     Accessibility Check 
+    
     (WAVES Evaluation)
 
 
