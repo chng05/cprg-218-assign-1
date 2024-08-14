@@ -35,7 +35,7 @@
 }
 
 /*Form*/
-/*F/L Name Box*/
+/*F&L Name Box*/
 .name-box {
     display: flex;
     justify-content: space-between;
@@ -118,4 +118,3 @@ input[type="submit"]:hover {
     padding-right: 5px
 }
 }
-
